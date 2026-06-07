@@ -12,7 +12,8 @@
     <dimen name="status_bar_height_portrait">123px</dimen>
     <dimen name="status_bar_height_landscape">28dp</dimen>
 
-    <!-- Default radius of the software rounded corners. -->
-    <dimen name="rounded_corner_radius">8dp</dimen>
+    <!-- Default radius of the software rounded corners. (primary display rounded corner size) -->
+    <!-- This is specified in px since we do not want the radius to change with display scale. -->
+    <dimen name="rounded_corner_radius">94px</dimen>
 
 </resources>
