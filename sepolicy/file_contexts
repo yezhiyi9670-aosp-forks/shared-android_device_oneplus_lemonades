@@ -1,0 +1,2 @@
+# Init
+/odm/bin/init\.lemonades\.sh        u:object_r:vendor_lemonades_init_exec:s0

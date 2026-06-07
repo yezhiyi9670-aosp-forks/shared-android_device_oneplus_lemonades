@@ -9,3 +9,15 @@ prebuilt_etc {
     vendor: true,
     ramdisk_available: true,
 }
+
+prebuilt_etc {
+    name: "init.lemonades.rc",
+    src: "init.lemonades.rc",
+    sub_dir: "init",
+    device_specific: true,
+}
+sh_binary {
+    name: "init.lemonades.sh",
+    src: "init.lemonades.sh",
+    device_specific: true,
+}

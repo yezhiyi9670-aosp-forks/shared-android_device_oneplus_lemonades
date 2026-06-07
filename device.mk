@@ -25,7 +25,9 @@ TARGET_SCREEN_WIDTH := 1080
 # Device init scripts
 PRODUCT_PACKAGES += \
     fstab.qcom \
-    fstab.qcom.ramdisk
+    fstab.qcom.ramdisk \
+    init.lemonades.rc \
+    init.lemonades.sh
 
 # Display
 # The display ID can be obtained by observing output of `adb shell dumpsys display | grep local`

@@ -1,0 +1,6 @@
+service lemonades-sh /odm/bin/init.lemonades.sh
+    user root
+    group root
+    class late_start
+    seclabel u:r:vendor_lemonades_init:s0
+    oneshot
