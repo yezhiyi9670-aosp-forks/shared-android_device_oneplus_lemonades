@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<config>
+    <!-- This is meant to be the canonical feature identifying 2016 and newer Nexus devices. -->
+    <feature name="com.google.android.feature.PIXEL_EXPERIENCE" />
+
+    <!-- This is meant to be the canonical feature identifying 2017 and newer Nexus devices. -->
+    <feature name="com.google.android.feature.PIXEL_2017_EXPERIENCE" />
+
+    <!-- This is meant to be the canonical feature identifying 2018 and newer Pixel devices. -->
+    <feature name="com.google.android.feature.PIXEL_2018_EXPERIENCE" />
+
+    <!-- This is meant to be the canonical feature identifying 2019 and newer devices. -->
+    <feature name="com.google.android.feature.PIXEL_2019_EXPERIENCE" />
+
+    <!-- This is meant to be the canonical feature identifying 2019 mid year and newer devices. -->
+    <feature name="com.google.android.feature.PIXEL_2019_MIDYEAR_EXPERIENCE" />
+
+    <!-- This is meant to be the canonical feature identifying 2020 and newer devices. -->
+    <feature name="com.google.android.feature.PIXEL_2020_EXPERIENCE" />
+
+    <!-- This is meant to be the canonical feature identifying 2020 mid year and newer devices. -->
+    <feature name="com.google.android.feature.PIXEL_2020_MIDYEAR_EXPERIENCE" />
+
+    <!-- This is meant to be the canonical feature identifying 2021 and newer devices. -->
+    <feature name="com.google.android.feature.PIXEL_2021_EXPERIENCE" />
+</config>

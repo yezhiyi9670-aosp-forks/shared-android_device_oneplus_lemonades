@@ -25,3 +25,10 @@ PRODUCT_PACKAGES += \
 
 PRODUCT_COPY_FILES += \
      vendor/avium/prebuilt/common/etc/init/init.avium-updater.rc:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/init/init.avium-updater.rc
+
+# Pixel experience flags
+# For compatibility with certain google apps using MicroG.
+ifneq ($(WITH_GMS),true)
+PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/configs/sysconfig/pixel_year_experience_default.xml:$(TARGET_COPY_OUT_VENDOR)/etc/sysconfig/pixel_year_experience_default.xml
+endif
