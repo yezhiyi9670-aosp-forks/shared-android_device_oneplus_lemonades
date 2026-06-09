@@ -29,9 +29,5 @@ BOARD_SUPER_PARTITION_SIZE := 7516192768
 TARGET_RECOVERY_FSTAB := $(DEVICE_PATH)/init/fstab.qcom
 TARGET_RECOVERY_UI_MARGIN_HEIGHT := 103
 
-# SEPolicy
-BOARD_VENDOR_SEPOLICY_DIRS += \
-    $(DEVICE_PATH)/sepolicy
-
 # Include the proprietary files BoardConfig.
 include vendor/oneplus/lemonades/BoardConfigVendor.mk
