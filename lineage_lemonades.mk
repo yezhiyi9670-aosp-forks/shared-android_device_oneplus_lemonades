@@ -38,3 +38,11 @@ PRODUCT_BUILD_PROP_OVERRIDES += \
 #        The package simply set refresh rate to 60Hz and then back (to 60 or 120) to force a refresh.
 PRODUCT_PACKAGES += \
     LemonadesRefreshRateHack
+
+# FIXME: Temp fix for GMS disabled by default. Remove if SetupWizard failure is resolved.
+#        This will result in MindTheGapps users unable to complete SetupWizard.
+#        The fix set secure.gms_enabled to 1 on boot if it was unset. No action secure.gms_enabled was set to 0 by the user.
+#        https://github.com/AviumUI/android_manifests/issues/6
+PRODUCT_PACKAGES += \
+    LemonadesGMSEnablerHack
+
