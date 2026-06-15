@@ -34,19 +34,23 @@ public class BootReceiver extends BroadcastReceiver {
                     Log.i(TAG, "Fix start");
 
                     // 1. Read current values
-                    float currentPeak = Settings.System.getFloat(context.getContentResolver(), "peak_refresh_rate", 1.0f / 0.0f);
-                    float currentMin = Settings.System.getFloat(context.getContentResolver(), "min_refresh_rate", 0.0f);
+                    float currentPeak = Settings.System.getFloat(
+                        context.getContentResolver(), Settings.System.PEAK_REFRESH_RATE, 1.0f / 0.0f
+                    );
+                    float currentMin = Settings.System.getFloat(
+                        context.getContentResolver(), Settings.System.MIN_REFRESH_RATE, 0.0f
+                    );
                     Log.i(TAG, "Current refresh rate settings: peak=" + currentPeak + ", min=" + currentMin);
 
                     // 2. Toggle down to force HAL re-evaluation
-                    Settings.System.putFloat(context.getContentResolver(), "peak_refresh_rate", 60.0f);
-                    Settings.System.putFloat(context.getContentResolver(), "min_refresh_rate", 0.0f);
+                    Settings.System.putFloat(context.getContentResolver(), Settings.System.PEAK_REFRESH_RATE, 60.0f);
+                    Settings.System.putFloat(context.getContentResolver(), Settings.System.MIN_REFRESH_RATE, 0.0f);
                     Log.i(TAG, "Temporarily set refresh rate to peak=60.0, min=0.0");
 
                     // 3. Restore after a while
                     new Handler(Looper.getMainLooper()).postDelayed(() -> {
-                        Settings.System.putFloat(context.getContentResolver(), "peak_refresh_rate", currentPeak);
-                        Settings.System.putFloat(context.getContentResolver(), "min_refresh_rate", currentMin);
+                        Settings.System.putFloat(context.getContentResolver(), Settings.System.PEAK_REFRESH_RATE, currentPeak);
+                        Settings.System.putFloat(context.getContentResolver(), Settings.System.MIN_REFRESH_RATE, currentMin);
                         Log.i(TAG, "Restored refresh rate");
                         Log.i(TAG, "Fix completed");
                     }, 500);

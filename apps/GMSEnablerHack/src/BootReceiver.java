@@ -11,7 +11,6 @@ import android.util.Log;
 
 public class BootReceiver extends BroadcastReceiver {
     private static final String TAG = "LemonadesGMSEnablerHack";
-    private static final String GMS_ENABLED_KEY = "gms_enabled";
 
     @Override
     public void onReceive(Context context, Intent intent) {
@@ -23,12 +22,12 @@ public class BootReceiver extends BroadcastReceiver {
             try {
                 Log.i(TAG, "Attempting to query GMS enablement setting.");
 
-                int gms_enabled = Settings.Secure.getInt(context.getContentResolver(), GMS_ENABLED_KEY);
+                int gms_enabled = Settings.Secure.getInt(context.getContentResolver(), Settings.Secure.GMS_ENABLED);
                 Log.i(TAG, "Successfully queried gms_enabled=" + gms_enabled + ", no need to perform fix.");
             }
             catch (Settings.SettingNotFoundException e) {
                 Log.i(TAG, "GMS enablement settings is unset. Setting it to 1.");
-                if(Settings.Secure.putInt(context.getContentResolver(), GMS_ENABLED_KEY, 1)) {
+                if(Settings.Secure.putInt(context.getContentResolver(), Settings.Secure.GMS_ENABLED, 1)) {
                     Log.i(TAG, "Set success.");
                 } else {
                     Log.i(TAG, "Set failure.");
