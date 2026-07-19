@@ -45,7 +45,11 @@ public class BootReceiver extends BroadcastReceiver {
             // "Show media squiggle animation" is by default displayed as enabled in AviumSettings,
             // but actually disabled by default.
             putSecureSettingsDefaultValue(context, Settings.Secure.SHOW_MEDIA_SQUIGGLE_ANIMATION, "0");
-            
+
+            // FIXME: Ultra Dim default strength inconsistency
+            // (zero on UI but obviously not zero actually)
+            putSecureSettingsDefaultValue(context, Settings.Secure.REDUCE_BRIGHT_COLORS_LEVEL, "0");
+
             Log.i(TAG, "Fix completed");
         }
     }
