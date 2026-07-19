@@ -12,20 +12,19 @@ import android.util.Log;
 public class BootReceiver extends BroadcastReceiver {
     private static final String TAG = "LemonadesDefaultSettingsHack";
 
-    private void putSecureSettingsDefaultIntValue(Context context, String name, int value) {
-        try {
-            Log.i(TAG, "Attempting to query " + name + ".");
+    private void putSecureSettingsDefaultValue(Context context, String name, String value) {
+        Log.i(TAG, "Attempting to query " + name + ".");
 
-            int value = Settings.Secure.getInt(context.getContentResolver(), name);
+        String existingValue = Settings.Secure.getString(context.getContentResolver(), name);
+        if(null != existingValue) {
             Log.i(TAG, "Successfully queried " + name + "=" + value + ", no need to set.");
+            return;
         }
-        catch (Settings.SettingNotFoundException e) {
-            Log.i(TAG, "Settings value " + name + " is unset. Setting it to " + value + ".");
-            if(Settings.Secure.putInt(context.getContentResolver(), name, value)) {
-                Log.i(TAG, "Set success.");
-            } else {
-                Log.i(TAG, "Set failure.");
-            }
+        Log.i(TAG, "Settings value " + name + " is unset. Setting it to " + value + ".");
+        if(Settings.Secure.putString(context.getContentResolver(), name, value)) {
+            Log.i(TAG, "Set success.");
+        } else {
+            Log.i(TAG, "Set failure.");
         }
     }
 
@@ -36,7 +35,17 @@ public class BootReceiver extends BroadcastReceiver {
             // Note: ACTION_LOCKED_BOOT_COMPLETED will trigger once on direct boot regardless of presence of secure lockscreen
         ) {
             Log.i(TAG, "Fix start");
-            putSecureSettingsDefaultIntValue(Settings.Secure.GMS_ENABLED, 1);
+            
+            // FIXME: https://github.com/AviumUI/android_manifests/issues/6
+            // GMS is disabled by AviumSettings by default, making it impossible to complete SetupWizard if GMS
+            // is prebuilt or installed with addon packages.
+            putSecureSettingsDefaultValue(context, Settings.Secure.GMS_ENABLED, "1");
+
+            // FIXME: https://github.com/AviumUI/android_manifests/issues/7
+            // "Show media squiggle animation" is by default displayed as enabled in AviumSettings,
+            // but actually disabled by default.
+            putSecureSettingsDefaultValue(context, Settings.Secure.SHOW_MEDIA_SQUIGGLE_ANIMATION, "0");
+            
             Log.i(TAG, "Fix completed");
         }
     }

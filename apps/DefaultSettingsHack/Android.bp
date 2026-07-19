@@ -1,5 +1,5 @@
 android_app {
-    name: "DefaultSettingsHack",
+    name: "LemonadesDefaultSettingsHack",
     srcs: ["src/**/*.java"],
     manifest: "AndroidManifest.xml",
     platform_apis: true,
