@@ -50,6 +50,10 @@ public class BootReceiver extends BroadcastReceiver {
             // (zero on UI but obviously not zero actually)
             putSecureSettingsDefaultValue(context, Settings.Secure.REDUCE_BRIGHT_COLORS_LEVEL, "0");
 
+            // HDR strength
+            // (set a sane default here since full strength will cause switching flickering due to quirks)
+            putSecureSettingsDefaultValue(context, Settings.Secure.HDR_BRIGHTNESS_BOOST_LEVEL, "0.65");
+            
             Log.i(TAG, "Fix completed");
         }
     }
