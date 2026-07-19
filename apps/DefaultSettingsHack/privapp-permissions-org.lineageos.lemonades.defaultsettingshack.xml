@@ -15,7 +15,7 @@
      limitations under the License.
 -->
 <permissions>
-    <privapp-permissions package="org.lineageos.lemonades.gmsenablerhack">
+    <privapp-permissions package="org.lineageos.lemonades.defaultsettingshack">
         <permission name="android.permission.RECEIVE_BOOT_COMPLETED" />
         <permission name="android.permission.WRITE_SECURE_SETTINGS" />
     </privapp-permissions>

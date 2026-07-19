@@ -43,6 +43,8 @@ PRODUCT_PACKAGES += \
 #        This will result in MindTheGapps users unable to complete SetupWizard.
 #        The fix set secure.gms_enabled to 1 on boot if it was unset. No action secure.gms_enabled was set to 0 by the user.
 #        https://github.com/AviumUI/android_manifests/issues/6
+# FIXME: Also temp fix for Squiggle Animation default value inconsistency.
+#        (enabled in UI but actually disabled by default)
 PRODUCT_PACKAGES += \
-    LemonadesGMSEnablerHack
+    DefaultSettingsHack
 

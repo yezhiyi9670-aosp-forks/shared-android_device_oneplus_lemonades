@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="org.lineageos.lemonades.gmsenablerhack">
+    package="org.lineageos.lemonades.defaultsettingshack">
 
     <!-- Permission to receive the boot completed broadcast -->
     <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
     <uses-permission android:name="android.permission.WRITE_SECURE_SETTINGS" />
 
     <application
-        android:label="LemonadesGMSEnablerHack"
+        android:label="LemonadesDefaultSettingsHack"
         android:defaultToDeviceProtectedStorage="true"
         android:directBootAware="true">
         
