@@ -133,7 +133,7 @@
         <item>20000</item>
         <item>30000</item>
         <item>50000</item>
-        <item>70000</item>
+        <item>51222</item>
     </integer-array>
 
     <!-- Array of desired screen brightness in nits corresponding to the lux values
@@ -151,35 +151,88 @@
          overridden in platform specific overlays -->
     <array name="config_autoBrightnessDisplayValuesNits">
         <item>0.0</item>
-        <item>1.3745343472098037</item>
-        <item>2.2829434999999996</item>
-        <item>3.0717477397358275</item>
-        <item>4.464452711190362</item>
-        <item>5.711194674189142</item>
-        <item>7.414942608570357</item>
-        <item>9.976958780691204</item>
-        <item>12.315367066487067</item>
-        <item>16.5705907704839</item>
-        <item>24.15639838295933</item>
-        <item>31.867302348843424</item>
-        <item>40.000000000000014</item>
-        <item>46.93996934346909</item>
-        <item>50.188786910002065</item>
-        <item>57.03953312715371</item>
-        <item>67.27172284830064</item>
-        <item>74.99511966188409</item>
-        <item>84.15229190538362</item>
-        <item>95.72640718258177</item>
-        <item>103.16089997278995</item>
-        <item>119.99999999999996</item>
-        <item>161.85148701571</item>
-        <item>200.83257082983846</item>
-        <item>249.54734002361053</item>
-        <item>319.3906278246834</item>
-        <item>381.09341939028855</item>
-        <item>486.7419399999999</item>
-        <item>655.830397616967</item>
-        <item>796.7652542132456</item>
+        <item>2.2829435000000005</item>
+        <item>3.821652479664507</item>
+        <item>5.165829621675903</item>
+        <item>7.551627736781867</item>
+        <item>9.697454532431086</item>
+        <item>12.641441571276598</item>
+        <item>17.087773856224292</item>
+        <item>21.161801213291024</item>
+        <item>28.6049873778885</item>
+        <item>41.94070195430325</item>
+        <item>55.51664854635468</item>
+        <item>70.00000000000001</item>
+        <item>82.67952025129689</item>
+        <item>88.86677733426875</item>
+        <item>101.69919409346781</item>
+        <item>120.98793312504704</item>
+        <item>135.65143131130782</item>
+        <item>153.14039576984936</item>
+        <item>175.7759023509451</item>
+        <item>193.83735395067822</item>
+        <item>222.48823132993468</item>
+        <item>264.68771374069047</item>
+        <item>296.76734053933865</item>
+        <item>335.0256770000801</item>
+        <item>382.77816997529436</item>
+        <item>405.6717493157312</item>
+        <item>486.74194000000034</item>
+        <item>776.9962566678895</item>
+        <item>796.74475</item>
+    </array>
+
+    <!-- An array describing the screen's backlight values corresponding to the brightness
+         values in the config_screenBrightnessNits array.
+
+         This array should be equal in size to config_screenBrightnessBacklight. -->
+    <integer-array name="config_screenBrightnessBacklight">
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>6</item>
+        <item>8</item>
+        <item>12</item>
+        <item>16</item>
+        <item>24</item>
+        <item>32</item>
+        <item>48</item>
+        <item>64</item>
+        <item>96</item>
+        <item>128</item>
+        <item>160</item>
+        <item>192</item>
+        <item>224</item>
+        <item>255</item>
+    </integer-array>
+
+    <!-- An array of floats describing the screen brightness in nits corresponding to the backlight
+         values in the config_screenBrightnessBacklight array.  On OLED displays these  values
+         should be measured with an all white image while the display is in the fully on state.
+         Note that this value should *not* reflect the maximum brightness value for any high
+         brightness modes but only the maximum brightness value obtainable in a sustainable manner.
+
+         This array should be equal in size to config_screenBrightnessBacklight -->
+    <array name="config_screenBrightnessNits">
+        <item>0.0</item>
+        <item>3.975946375809424</item>
+        <item>7.808365821049663</item>
+        <item>11.640785266289901</item>
+        <item>19.305624156770378</item>
+        <item>26.97046304725086</item>
+        <item>42.300140828211816</item>
+        <item>57.62981860917277</item>
+        <item>88.28917417109469</item>
+        <item>118.9485297330166</item>
+        <item>180.2672408568604</item>
+        <item>241.58595198070424</item>
+        <item>364.22337422839183</item>
+        <item>486.81762427978515</item>
+        <item>564.9094984770046</item>
+        <item>643.0013726742241</item>
+        <item>721.0932468714436</item>
+        <item>796.74475</item>
     </array>
 
     <!-- Minimum screen brightness setting allowed by power manager.
@@ -196,12 +249,12 @@
     <!-- Screen brightness used to dim the screen while dozing in a very low power state.
          May be less than the minimum allowed brightness setting
          that can be set by the user. -->
-    <item type="dimen" format="float" name="config_screenBrightnessDozeFloat">0.04</item>
+    <item type="dimen" format="float" name="config_screenBrightnessDozeFloat">0.03991688347704863</item>
 
     <!-- Default screen brightness setting set.
          -2 is invalid so setting will resort to int value specified above.
          Must be in the range specified by minimum and maximum. -->
-    <item type="dimen" format="float" name="config_screenBrightnessSettingDefaultFloat">0.12478632478632479</item>
+    <item type="dimen" format="float" name="config_screenBrightnessSettingDefaultFloat">0.10258160056933605</item>
 
     <!-- Maximum screen brightness allowed by the power manager.
          -2 is invalid so setting will resort to int value specified above.
@@ -216,6 +269,12 @@
          hysteresis threshold. -->
     <integer name="config_autoBrightnessBrighteningLightDebounce">1500</integer>
     <integer name="config_autoBrightnessDarkeningLightDebounce">1500</integer>
+
+    <!-- Fast brightness animation ramp rate in brightness units per second-->
+    <integer translatable="false" name="config_brightness_ramp_rate_fast">180</integer>
+
+    <!-- Slow brightness animation ramp rate in brightness units per second-->
+    <integer translatable="false" name="config_brightness_ramp_rate_slow">8</integer>
 
     <!-- Light sensor event rate in milliseconds for automatic brightness control. -->
     <integer name="config_autoBrightnessLightSensorRate">200</integer>
@@ -306,7 +365,7 @@
         <item>2</item> <!-- Brightness register value <= 16, ~3.8nits -->
     </integer-array>
     <integer-array name="config_ambientThresholdsOfPeakRefreshRate">
-        <item>20</item> <!-- Lux value corresponding to ~6.6nits -->
+        <item>20</item>
     </integer-array>
 
     <!-- Default refresh rate in the zone defined by brightness and ambient thresholds.
