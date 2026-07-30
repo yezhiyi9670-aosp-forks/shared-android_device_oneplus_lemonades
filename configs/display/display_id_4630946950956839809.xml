@@ -33,6 +33,22 @@
         </sdrHdrRatioMap>
     </highBrightnessMode>
 
+    <evenDimmer enabled="true">
+        <transitionPoint>0.0010866910866910867</transitionPoint>
+        <brightnessMapping>
+            <brightnessPoint><brightness>0.0007280644615383931</brightness><backlight>0.0009768009768009768</backlight><nits>1.4227311954191098</nits></brightnessPoint>
+            <brightnessPoint><brightness>0.0010866910866910867</brightness><backlight>0.0010866910866910867</backlight><nits>1.9087942</nits></brightnessPoint>
+            <brightnessPoint><brightness>0.002197802197802198</brightness><backlight>0.002197802197802198</backlight><nits>2.2829435</nits></brightnessPoint>
+            <brightnessPoint><brightness>0.4998778998778999</brightness><backlight>0.4998778998778999</backlight><nits>486.74194</nits></brightnessPoint>
+            <brightnessPoint><brightness>1.0</brightness><backlight>1.0</backlight><nits>796.74475</nits></brightnessPoint>
+        </brightnessMapping>
+        <luxToMinimumNitsMap>
+            <point><value>20</value><nits>1.4227311954191098</nits></point>
+            <point><value>50</value><nits>1.9087942</nits></point>
+            <point><value>100</value><nits>2.2829435</nits></point>
+        </luxToMinimumNitsMap>
+    </evenDimmer>
+    
     <ambientBrightnessChangeThresholds>  // Thresholds for lux changes
         <brighteningThresholds>
             // Minimum change needed in ambient brightness to brighten screen.

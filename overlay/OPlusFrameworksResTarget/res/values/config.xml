@@ -235,6 +235,9 @@
         <item>796.74475</item>
     </array>
 
+    <!-- Whether even dimmer feature is enabled. -->
+    <bool name="config_evenDimmerEnabled">true</bool>
+
     <!-- Minimum screen brightness setting allowed by power manager.
          -2 is invalid so setting will resort to int value specified above.
          Set this to 0.0 to allow screen to go to minimal brightness.
