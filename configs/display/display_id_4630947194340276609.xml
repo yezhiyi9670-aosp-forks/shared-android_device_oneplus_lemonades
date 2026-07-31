@@ -31,8 +31,8 @@
             <timeMinSecs>60</timeMinSecs>
         </timing>
         <sdrHdrRatioMap>
-            <point><sdrNits>0.0</sdrNits><hdrRatio>10.0</hdrRatio></point>
-            <point><sdrNits>1.9087942</sdrNits><hdrRatio>5.0</hdrRatio></point>
+            <point><sdrNits>0.0</sdrNits><hdrRatio>4.0</hdrRatio></point>
+            <point><sdrNits>1.9087942</sdrNits><hdrRatio>4.0</hdrRatio></point>
             <point><sdrNits>486.74194</sdrNits><hdrRatio>1.25</hdrRatio></point>
             <point><sdrNits>796.74475</sdrNits><hdrRatio>1.00</hdrRatio></point>
         </sdrHdrRatioMap>
