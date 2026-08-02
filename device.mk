@@ -30,8 +30,7 @@ PRODUCT_PACKAGES += \
 # Display
 # The display ID can be obtained by observing output of `adb shell dumpsys display | grep local`
 PRODUCT_COPY_FILES += \
-    $(LOCAL_PATH)/configs/display/display_id_4630946950956839809.xml:$(TARGET_COPY_OUT_VENDOR)/etc/displayconfig/display_id_4630946950956839809.xml \
-    $(LOCAL_PATH)/configs/display/display_id_4630947194340276609.xml:$(TARGET_COPY_OUT_VENDOR)/etc/displayconfig/display_id_4630947194340276609.xml
+    $(LOCAL_PATH)/configs/display/displayconfig.xml:$(TARGET_COPY_OUT_VENDOR)/etc/displayconfig/display_port_129.xml
 
 # LiveDisplay
 # Disable Sunlight Enhancement, prefer AOSP HBM for smoother user experience.
