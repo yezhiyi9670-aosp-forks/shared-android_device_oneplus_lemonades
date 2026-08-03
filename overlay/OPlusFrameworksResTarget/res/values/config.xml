@@ -133,7 +133,6 @@
         <item>20000</item>
         <item>30000</item>
         <item>50000</item>
-        <item>51222</item>
     </integer-array>
 
     <!-- Array of desired screen brightness in nits corresponding to the lux values
@@ -157,29 +156,28 @@
         <item>7.551627736781867</item>
         <item>9.697454532431086</item>
         <item>12.641441571276598</item>
-        <item>17.087773856224292</item>
-        <item>21.161801213291024</item>
-        <item>28.6049873778885</item>
-        <item>41.94070195430325</item>
-        <item>55.51664854635468</item>
+        <item>17.087773856224267</item>
+        <item>21.161801212953</item>
+        <item>28.604971321615437</item>
+        <item>41.82579099754369</item>
+        <item>54.73548320644523</item>
         <item>70.00000000000001</item>
-        <item>82.67952025129689</item>
-        <item>88.86677733426875</item>
-        <item>101.69919409346781</item>
-        <item>120.98793312504704</item>
-        <item>135.65143131130782</item>
+        <item>81.42423951050701</item>
+        <item>88.62329627811599</item>
+        <item>101.6986814298172</item>
+        <item>120.98793312311446</item>
+        <item>135.65143131130768</item>
         <item>153.14039576984936</item>
         <item>175.7759023509451</item>
         <item>193.83735395067822</item>
         <item>222.48823132993468</item>
-        <item>264.68771374069047</item>
-        <item>296.76734053933865</item>
-        <item>335.0256770000801</item>
-        <item>382.77816997529436</item>
-        <item>405.6717493157312</item>
+        <item>264.68771374071156</item>
+        <item>296.76734111085227</item>
+        <item>335.028293036155</item>
+        <item>384.408364869168</item>
+        <item>415.40010582105305</item>
         <item>486.74194000000034</item>
-        <item>776.9962566678895</item>
-        <item>796.74475</item>
+        <item>791.4389955986829</item>
     </array>
 
     <!-- Array of lux values to define the minimum brightness curve, which guarantees that any

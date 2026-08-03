@@ -112,29 +112,28 @@
                 <point><first>5</first><second>0.007610271167417443</second></point>
                 <point><first>7</first><second>0.009814658529358556</second></point>
                 <point><first>10</first><second>0.012838988282024375</second></point>
-                <point><first>15</first><second>0.017406662949803905</second></point>
-                <point><first>20</first><second>0.02159187232286663</second></point>
-                <point><first>30</first><second>0.029238186343681846</second></point>
-                <point><first>50</first><second>0.04293783849375601</second></point>
-                <point><first>70</first><second>0.056884278697869224</second></point>
+                <point><first>15</first><second>0.017406662949803878</second></point>
+                <point><first>20</first><second>0.021591872322519377</second></point>
+                <point><first>30</first><second>0.02923816984922596</second></point>
+                <point><first>50</first><second>0.04281979156595041</second></point>
+                <point><first>70</first><second>0.0560817950088901</second></point>
                 <point><first>100</first><second>0.07176288724526028</second></point>
-                <point><first>150</first><second>0.08478843723564468</second></point>
-                <point><first>200</first><second>0.09114454731239358</second></point>
-                <point><first>300</first><second>0.10432716642428762</second></point>
-                <point><first>500</first><second>0.12414230371085933</second></point>
-                <point><first>700</first><second>0.13920597527520856</second></point>
+                <point><first>150</first><second>0.08349889932592346</second></point>
+                <point><first>200</first><second>0.09089442155007975</second></point>
+                <point><first>300</first><second>0.10432663976981828</second></point>
+                <point><first>500</first><second>0.12414230370887401</second></point>
+                <point><first>700</first><second>0.13920597527520842</second></point>
                 <point><first>1000</first><second>0.15717222134129996</second></point>
                 <point><first>1500</first><second>0.18042546095023393</second></point>
                 <point><first>2000</first><second>0.1989798175858621</second></point>
                 <point><first>3000</first><second>0.2284125901336805</second></point>
-                <point><first>5000</first><second>0.2717637151617292</second></point>
-                <point><first>7000</first><second>0.30471880922342515</second></point>
-                <point><first>10000</first><second>0.3440212326780794</second></point>
-                <point><first>15000</first><second>0.3930769123951817</second></point>
-                <point><first>20000</first><second>0.41659526768367855</second></point>
+                <point><first>5000</first><second>0.27176371516175085</second></point>
+                <point><first>7000</first><second>0.30471880981053556</second></point>
+                <point><first>10000</first><second>0.3440239201069406</second></point>
+                <point><first>15000</first><second>0.39475159603173715</second></point>
+                <point><first>20000</first><second>0.4265891153587426</second></point>
                 <point><first>30000</first><second>0.49987789987790043</second></point>
-                <point><first>50000</first><second>0.9681401018284241</second></point>
-                <point><first>51222</first><second>1.0</second></point>
+                <point><first>50000</first><second>0.9914403194154313</second></point>
             </map>
         </luxToBrightnessMapping>
         <luxToBrightnessMapping>
@@ -148,11 +147,11 @@
                 <point><first>5</first><second>0.004507185162750516</second></point>
                 <point><first>7</first><second>0.005829817579915184</second></point>
                 <point><first>10</first><second>0.007644415431514674</second></point>
-                <point><first>15</first><second>0.010385020232182393</second></point>
-                <point><first>20</first><second>0.012896145856020023</second></point>
-                <point><first>30</first><second>0.01748393426850916</second></point>
-                <point><first>50</first><second>0.02570372555855366</second></point>
-                <point><first>70</first><second>0.03407158968102158</second></point>
+                <point><first>15</first><second>0.010385020232182376</second></point>
+                <point><first>20</first><second>0.012896145855811676</second></point>
+                <point><first>30</first><second>0.017483924371835626</second></point>
+                <point><first>50</first><second>0.025632897401870296</second></point>
+                <point><first>70</first><second>0.03359009946763412</second></point>
                 <point><first>90</first><second>0.03991688347704863</second></point>
                 <point><first>100</first><second>0.03991688347704863</second></point>
                 <point><first>150</first><second>0.03991688347704863</second></point>
@@ -171,7 +170,6 @@
                 <point><first>20000</first><second>0.03991688347704863</second></point>
                 <point><first>30000</first><second>0.03991688347704863</second></point>
                 <point><first>50000</first><second>0.03991688347704863</second></point>
-                <point><first>51222</first><second>0.03991688347704863</second></point>
             </map>
         </luxToBrightnessMapping>
     </autoBrightness>
