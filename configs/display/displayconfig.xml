@@ -177,7 +177,10 @@
     <screenBrightnessRampFastDecrease>0.70</screenBrightnessRampFastDecrease>
     <screenBrightnessRampFastIncrease>0.70</screenBrightnessRampFastIncrease>
     <screenBrightnessRampSlowDecrease>0.02</screenBrightnessRampSlowDecrease>
-    <screenBrightnessRampSlowIncrease>0.05</screenBrightnessRampSlowIncrease>
+    <screenBrightnessRampSlowIncrease>0.07</screenBrightnessRampSlowIncrease>
+
     <screenBrightnessRampIncreaseMaxMillis>2000</screenBrightnessRampIncreaseMaxMillis>
     <screenBrightnessRampDecreaseMaxMillis>5000</screenBrightnessRampDecreaseMaxMillis>
+    <ambientLightHorizonLong>5000</ambientLightHorizonLong>
+    <ambientLightHorizonShort>3000</ambientLightHorizonShort>
 </displayConfiguration>
