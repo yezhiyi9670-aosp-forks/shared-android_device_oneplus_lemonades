@@ -57,13 +57,13 @@
             // above the specified threshold.
             <brightnessThresholdPoints>
                 <brightnessThresholdPoint><threshold>0</threshold><percentage>0.2</percentage></brightnessThresholdPoint>
-                <brightnessThresholdPoint><threshold>2</threshold><percentage>0.5</percentage></brightnessThresholdPoint>
-                <brightnessThresholdPoint><threshold>20</threshold><percentage>1</percentage></brightnessThresholdPoint>
-                <brightnessThresholdPoint><threshold>80</threshold><percentage>3</percentage></brightnessThresholdPoint>
-                <brightnessThresholdPoint><threshold>400</threshold><percentage>10</percentage></brightnessThresholdPoint>
-                <brightnessThresholdPoint><threshold>4000</threshold><percentage>40</percentage></brightnessThresholdPoint>
-                <brightnessThresholdPoint><threshold>12000</threshold><percentage>60</percentage></brightnessThresholdPoint>
-                <brightnessThresholdPoint><threshold>25000</threshold><percentage>100</percentage></brightnessThresholdPoint>
+                <brightnessThresholdPoint><threshold>16</threshold><percentage>0.5</percentage></brightnessThresholdPoint>
+                <brightnessThresholdPoint><threshold>80</threshold><percentage>1</percentage></brightnessThresholdPoint>
+                <brightnessThresholdPoint><threshold>240</threshold><percentage>3</percentage></brightnessThresholdPoint>
+                <brightnessThresholdPoint><threshold>800</threshold><percentage>10</percentage></brightnessThresholdPoint>
+                <brightnessThresholdPoint><threshold>6400</threshold><percentage>40</percentage></brightnessThresholdPoint>
+                <brightnessThresholdPoint><threshold>16000</threshold><percentage>60</percentage></brightnessThresholdPoint>
+                <brightnessThresholdPoint><threshold>32000</threshold><percentage>100</percentage></brightnessThresholdPoint>
             </brightnessThresholdPoints>
         </brighteningThresholds>
         <darkeningThresholds>
@@ -73,7 +73,7 @@
             // above the specified threshold.
             <brightnessThresholdPoints>
                 <brightnessThresholdPoint><threshold>0</threshold><percentage>80</percentage></brightnessThresholdPoint>
-                <brightnessThresholdPoint><threshold>20</threshold><percentage>50</percentage></brightnessThresholdPoint>
+                <brightnessThresholdPoint><threshold>80</threshold><percentage>50</percentage></brightnessThresholdPoint>
             </brightnessThresholdPoints>
         </darkeningThresholds>
     </ambientBrightnessChangeThresholds>

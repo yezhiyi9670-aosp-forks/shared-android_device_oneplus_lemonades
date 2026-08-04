@@ -55,13 +55,13 @@
          level[n] <= value < level[n+1]  n+1
          level[MAX] <= value             MAX+1 -->
     <integer-array name="config_ambientThresholdLevels">
-        <item>2</item>
-        <item>20</item>
+        <item>16</item>
         <item>80</item>
-        <item>400</item>
-        <item>4000</item>
-        <item>12000</item>
-        <item>25000</item>
+        <item>240</item>
+        <item>800</item>
+        <item>6400</item>
+        <item>16000</item>
+        <item>32000</item>
     </integer-array>
 
     <!-- Array of hysteresis constraint values for brightening, represented as tenths of a
