@@ -100,7 +100,7 @@
     </displayBrightnessChangeThresholds>
 
     <autoBrightness enabled="true">
-        <brighteningLightDebounceMillis>1500</brighteningLightDebounceMillis>
+        <brighteningLightDebounceMillis>500</brighteningLightDebounceMillis>
         <darkeningLightDebounceMillis>1500</darkeningLightDebounceMillis>
         <luxToBrightnessMapping>
             <mode>default</mode>
@@ -181,6 +181,6 @@
 
     <screenBrightnessRampIncreaseMaxMillis>2000</screenBrightnessRampIncreaseMaxMillis>
     <screenBrightnessRampDecreaseMaxMillis>5000</screenBrightnessRampDecreaseMaxMillis>
-    <ambientLightHorizonLong>5000</ambientLightHorizonLong>
-    <ambientLightHorizonShort>3000</ambientLightHorizonShort>
+    <ambientLightHorizonLong>3000</ambientLightHorizonLong>
+    <ambientLightHorizonShort>500</ambientLightHorizonShort>
 </displayConfiguration>
