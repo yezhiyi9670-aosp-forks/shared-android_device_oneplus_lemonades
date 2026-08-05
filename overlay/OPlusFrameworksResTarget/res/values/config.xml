@@ -35,7 +35,7 @@
     <integer-array name="config_ambientDarkeningThresholds">
         <item>800</item>
         <item>800</item>
-        <item>500</item>
+        <item>600</item>
         <item>500</item>
         <item>500</item>
         <item>500</item>

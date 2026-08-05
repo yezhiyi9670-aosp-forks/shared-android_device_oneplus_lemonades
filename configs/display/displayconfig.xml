@@ -73,7 +73,8 @@
             // above the specified threshold.
             <brightnessThresholdPoints>
                 <brightnessThresholdPoint><threshold>0</threshold><percentage>80</percentage></brightnessThresholdPoint>
-                <brightnessThresholdPoint><threshold>80</threshold><percentage>50</percentage></brightnessThresholdPoint>
+                <brightnessThresholdPoint><threshold>80</threshold><percentage>60</percentage></brightnessThresholdPoint>
+                <brightnessThresholdPoint><threshold>240</threshold><percentage>50</percentage></brightnessThresholdPoint>
             </brightnessThresholdPoints>
         </darkeningThresholds>
     </ambientBrightnessChangeThresholds>
