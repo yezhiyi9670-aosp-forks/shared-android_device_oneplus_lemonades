@@ -150,34 +150,34 @@
          overridden in platform specific overlays -->
     <array name="config_autoBrightnessDisplayValuesNits">
         <item>0.0</item>
-        <item>2.2829435000000005</item>
-        <item>4.091923596359482</item>
-        <item>5.756731034146149</item>
-        <item>8.850073207884558</item>
-        <item>11.748156576572713</item>
-        <item>15.862777104302538</item>
-        <item>22.32512661394751</item>
-        <item>29.055658002377594</item>
+        <item>2.8462767128494466</item>
+        <item>4.877413589527718</item>
+        <item>6.683740873673545</item>
+        <item>9.94042704805555</item>
+        <item>12.91077842550784</item>
+        <item>17.034034093137876</item>
+        <item>23.35056508887644</item>
+        <item>29.765887449910903</item>
         <item>39.99999999900983</item>
-        <item>44.279743667335595</item>
-        <item>46.62996655633854</item>
-        <item>49.99486274340835</item>
-        <item>54.32736446033718</item>
-        <item>60.10578636332665</item>
-        <item>76.57190024905596</item>
+        <item>44.24907070145376</item>
+        <item>46.62991002156078</item>
+        <item>49.99486274237591</item>
+        <item>54.32736446036781</item>
+        <item>60.10578650040854</item>
+        <item>76.5723868177431</item>
         <item>100.05594359893647</item>
-        <item>116.0399043847445</item>
-        <item>134.63737160108423</item>
-        <item>160.20995408138543</item>
-        <item>181.25474537831093</item>
-        <item>215.69207475258213</item>
-        <item>268.5402464824153</item>
-        <item>310.2413469402741</item>
-        <item>361.5151615195732</item>
-        <item>427.1682395324922</item>
-        <item>486.7419399999999</item>
-        <item>603.1748907851855</item>
-        <item>796.7444133989294</item>
+        <item>115.99959226662494</item>
+        <item>134.52296975868038</item>
+        <item>159.99406372967147</item>
+        <item>180.94659161257735</item>
+        <item>215.21823826556837</item>
+        <item>267.78236101062737</item>
+        <item>309.2380344510718</item>
+        <item>360.2078823982697</item>
+        <item>427.99696160240575</item>
+        <item>484.54305518839476</item>
+        <item>579.6800481718935</item>
+        <item>727.4143258701288</item>
     </array>
 
     <!-- Array of lux values to define the minimum brightness curve, which guarantees that any
@@ -203,9 +203,9 @@
          config_minimumBrightnessCurveLux array. -->
     <array name="config_minimumBrightnessCurveNits">
         <item>0.0</item>
-        <item>1.4227311954191098</item>
-        <item>1.9087942</item>
-        <item>2.2829435</item>
+        <item>1.4707520870516326</item>
+        <item>1.8809666970145507</item>
+        <item>2.8462767128494475</item>
     </array>
 
     <!-- An array describing the screen's backlight values corresponding to the brightness
@@ -242,23 +242,23 @@
          This array should be equal in size to config_screenBrightnessBacklight -->
     <array name="config_screenBrightnessNits">
         <item>0.0</item>
-        <item>3.975946375809424</item>
-        <item>7.808365821049663</item>
-        <item>11.640785266289901</item>
-        <item>19.305624156770378</item>
-        <item>26.97046304725086</item>
-        <item>42.300140828211816</item>
-        <item>57.62981860917277</item>
-        <item>88.28917417109469</item>
-        <item>118.9485297330166</item>
-        <item>180.2672408568604</item>
-        <item>241.58595198070424</item>
-        <item>364.22337422839183</item>
-        <item>486.81762427978515</item>
-        <item>564.9094984770046</item>
-        <item>643.0013726742241</item>
-        <item>721.0932468714436</item>
-        <item>796.74475</item>
+        <item>4.289554786940143</item>
+        <item>8.018409938790278</item>
+        <item>12.076087081552073</item>
+        <item>19.890422906262994</item>
+        <item>27.834020973418397</item>
+        <item>42.0140752012694</item>
+        <item>55.56689161590918</item>
+        <item>85.3760610340473</item>
+        <item>117.44050548193381</item>
+        <item>183.74429097726588</item>
+        <item>246.98905422870394</item>
+        <item>368.98247487096603</item>
+        <item>484.6039890078872</item>
+        <item>547.4627475038557</item>
+        <item>608.7221657874056</item>
+        <item>667.5920789135146</item>
+        <item>727.41437</item>
     </array>
 
     <!-- Whether even dimmer feature is enabled. -->
@@ -278,12 +278,12 @@
     <!-- Screen brightness used to dim the screen while dozing in a very low power state.
          May be less than the minimum allowed brightness setting
          that can be set by the user. -->
-    <item type="dimen" format="float" name="config_screenBrightnessDozeFloat">0.03991688347704863</item>
+    <item type="dimen" format="float" name="config_screenBrightnessDozeFloat">0.03952188439747031</item>
 
     <!-- Default screen brightness setting set.
          -2 is invalid so setting will resort to int value specified above.
          Must be in the range specified by minimum and maximum. -->
-    <item type="dimen" format="float" name="config_screenBrightnessSettingDefaultFloat">0.10258160056933605</item>
+    <item type="dimen" format="float" name="config_screenBrightnessSettingDefaultFloat">0.10534772201081638</item>
 
     <!-- Maximum screen brightness allowed by the power manager.
          -2 is invalid so setting will resort to int value specified above.
@@ -410,10 +410,10 @@
              display brightness <= disp0 && ambient brightness <= amb0
              || display brightness <= disp1 && ambient brightness <= amb1 -->
     <integer-array name="config_brightnessThresholdsOfPeakRefreshRate">
-        <item>2</item> <!-- Brightness register value <= 16, ~3.8nits -->
+        <item>2</item> <!-- Brightness register value <= 16, ~4.3nits -->
     </integer-array>
     <integer-array name="config_ambientThresholdsOfPeakRefreshRate">
-        <item>20</item>
+        <item>50</item>
     </integer-array>
 
     <!-- Default refresh rate in the zone defined by brightness and ambient thresholds.
