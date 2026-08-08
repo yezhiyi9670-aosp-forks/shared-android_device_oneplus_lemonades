@@ -33,11 +33,11 @@
          the screen brightness is recalculated. See the config_ambientThresholdLevels
          description for how the constraint value is chosen. -->
     <integer-array name="config_ambientDarkeningThresholds">
-        <item>800</item>
-        <item>800</item>
+        <item>850</item>
+        <item>850</item>
+        <item>770</item>
+        <item>700</item>
         <item>600</item>
-        <item>500</item>
-        <item>500</item>
         <item>500</item>
         <item>500</item>
         <item>500</item>
