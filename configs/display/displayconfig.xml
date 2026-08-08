@@ -221,4 +221,8 @@
     <screenBrightnessRampDecreaseMaxMillis>5000</screenBrightnessRampDecreaseMaxMillis>
     <ambientLightHorizonLong>3000</ambientLightHorizonLong>
     <ambientLightHorizonShort>500</ambientLightHorizonShort>
+
+    <quirks>
+        <quirk>canSetBrightnessViaHwc</quirk>
+    </quirks>
 </displayConfiguration>
