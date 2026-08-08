@@ -426,7 +426,7 @@
         <item>1897</item> <!-- <item>sensorLocationY</item> -->
 
         <!-- Should have been 95, reduced for aesthetical purposes. -->
-        <item>84</item>   <!-- <item>sensorRadius</item> -->
+        <item>88</item>   <!-- <item>sensorRadius</item> -->
     </integer-array>
 
 </resources>
