@@ -203,8 +203,8 @@
          config_minimumBrightnessCurveLux array. -->
     <array name="config_minimumBrightnessCurveNits">
         <item>0.0</item>
-        <item>1.4707520870516326</item>
-        <item>1.8809666970145507</item>
+        <item>1.5</item>
+        <item>2.1330104862470782</item>
         <item>2.8462767128494475</item>
     </array>
 
@@ -242,22 +242,22 @@
          This array should be equal in size to config_screenBrightnessBacklight -->
     <array name="config_screenBrightnessNits">
         <item>0.0</item>
-        <item>4.289554786940143</item>
-        <item>8.018409938790278</item>
-        <item>12.076087081552073</item>
-        <item>19.890422906262994</item>
-        <item>27.834020973418397</item>
-        <item>42.0140752012694</item>
+        <item>4.075886350814422</item>
+        <item>7.4970268053376845</item>
+        <item>11.419073835824157</item>
+        <item>19.655167844972162</item>
+        <item>27.29308705925169</item>
+        <item>41.56717961183078</item>
         <item>55.56689161590918</item>
         <item>85.3760610340473</item>
-        <item>117.44050548193381</item>
-        <item>183.74429097726588</item>
-        <item>246.98905422870394</item>
-        <item>368.98247487096603</item>
-        <item>484.6039890078872</item>
-        <item>547.4627475038557</item>
-        <item>608.7221657874056</item>
-        <item>667.5920789135146</item>
+        <item>115.03901781219972</item>
+        <item>172.64973466724064</item>
+        <item>230.20860484006081</item>
+        <item>355.487840467214</item>
+        <item>484.6305699378903</item>
+        <item>575.0529716321261</item>
+        <item>679.3453251973676</item>
+        <item>721.3027901055128</item>
         <item>727.41437</item>
     </array>
 
@@ -278,7 +278,7 @@
     <!-- Screen brightness used to dim the screen while dozing in a very low power state.
          May be less than the minimum allowed brightness setting
          that can be set by the user. -->
-    <item type="dimen" format="float" name="config_screenBrightnessDozeFloat">0.03952188439747031</item>
+    <item type="dimen" format="float" name="config_screenBrightnessDozeFloat">0.04</item>
 
     <!-- Default screen brightness setting set.
          -2 is invalid so setting will resort to int value specified above.
