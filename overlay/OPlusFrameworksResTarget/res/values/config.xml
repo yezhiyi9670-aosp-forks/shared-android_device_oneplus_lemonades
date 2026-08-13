@@ -16,12 +16,12 @@
          the screen brightness is recalculated. See the config_ambientThresholdLevels
          description for how the constraint value is chosen. -->
     <integer-array name="config_ambientBrighteningThresholds">
-        <item>2</item>
-        <item>5</item>
-        <item>10</item>
-        <item>30</item>
+        <item>200</item>
         <item>100</item>
+        <item>200</item>
+        <item>300</item>
         <item>400</item>
+        <item>500</item>
         <item>600</item>
         <item>1000</item>
     </integer-array>
@@ -33,11 +33,11 @@
          the screen brightness is recalculated. See the config_ambientThresholdLevels
          description for how the constraint value is chosen. -->
     <integer-array name="config_ambientDarkeningThresholds">
-        <item>850</item>
-        <item>850</item>
-        <item>770</item>
+        <item>700</item>
+        <item>800</item>
         <item>700</item>
         <item>600</item>
+        <item>550</item>
         <item>500</item>
         <item>500</item>
         <item>500</item>
@@ -55,13 +55,13 @@
          level[n] <= value < level[n+1]  n+1
          level[MAX] <= value             MAX+1 -->
     <integer-array name="config_ambientThresholdLevels">
-        <item>16</item>
-        <item>80</item>
-        <item>240</item>
-        <item>800</item>
-        <item>6400</item>
-        <item>16000</item>
-        <item>32000</item>
+        <item>20</item>
+        <item>100</item>
+        <item>300</item>
+        <item>1000</item>
+        <item>8000</item>
+        <item>20000</item>
+        <item>40000</item>
     </integer-array>
 
     <!-- Array of hysteresis constraint values for brightening, represented as tenths of a
@@ -149,35 +149,35 @@
          array. The brightness values must be non-negative and non-decreasing. This must be
          overridden in platform specific overlays -->
     <array name="config_autoBrightnessDisplayValuesNits">
-        <item>0.0</item>
-        <item>2.8462767128494466</item>
-        <item>4.877413589527718</item>
-        <item>6.683740873673545</item>
-        <item>9.94042704805555</item>
-        <item>12.91077842550784</item>
-        <item>17.034034093137876</item>
-        <item>23.35056508887644</item>
-        <item>29.765887449910903</item>
-        <item>39.99999999900983</item>
-        <item>44.24907070145376</item>
-        <item>46.62991002156078</item>
-        <item>49.99486274237591</item>
-        <item>54.32736446036781</item>
-        <item>60.10578650040854</item>
-        <item>76.5723868177431</item>
-        <item>100.05594359893647</item>
-        <item>115.99959226662494</item>
-        <item>134.52296975868038</item>
-        <item>159.99406372967147</item>
-        <item>180.94659161257735</item>
-        <item>215.21823826556837</item>
-        <item>267.78236101062737</item>
-        <item>309.2380344510718</item>
-        <item>360.2078823982697</item>
-        <item>427.99696160240575</item>
-        <item>484.54305518839476</item>
-        <item>579.6800481718935</item>
-        <item>727.4143258701288</item>
+        <item>0.992833418392721</item>
+        <item>1.1369775879228172</item>
+        <item>3.564464388930779</item>
+        <item>5.121759331295525</item>
+        <item>7.377022920346898</item>
+        <item>9.642590731976135</item>
+        <item>12.378105242113254</item>
+        <item>16.775732621571734</item>
+        <item>20.821864603878254</item>
+        <item>28.2853474536976</item>
+        <item>41.70890145403054</item>
+        <item>55.34850046680218</item>
+        <item>70.65176526752144</item>
+        <item>83.11523532403413</item>
+        <item>89.31397540086367</item>
+        <item>102.04493801701432</item>
+        <item>123.56594040948569</item>
+        <item>139.7372674611782</item>
+        <item>157.4593041468438</item>
+        <item>180.4808141006024</item>
+        <item>199.88435632434985</item>
+        <item>230.50106594818232</item>
+        <item>275.19820098420064</item>
+        <item>309.9057572687803</item>
+        <item>351.42299113007124</item>
+        <item>401.75682766361</item>
+        <item>439.3474826166642</item>
+        <item>529.5567799967359</item>
+        <item>726.1488521124969</item>
     </array>
 
     <!-- Array of lux values to define the minimum brightness curve, which guarantees that any
@@ -203,8 +203,8 @@
          config_minimumBrightnessCurveLux array. -->
     <array name="config_minimumBrightnessCurveNits">
         <item>0.0</item>
-        <item>1.5</item>
-        <item>2.1330104862470782</item>
+        <item>1.0</item>
+        <item>2.10</item>
         <item>2.8462767128494475</item>
     </array>
 
@@ -278,7 +278,7 @@
     <!-- Screen brightness used to dim the screen while dozing in a very low power state.
          May be less than the minimum allowed brightness setting
          that can be set by the user. -->
-    <item type="dimen" format="float" name="config_screenBrightnessDozeFloat">0.04</item>
+    <item type="dimen" format="float" name="config_screenBrightnessDozeFloat">0.4998778998778999</item>
 
     <!-- Default screen brightness setting set.
          -2 is invalid so setting will resort to int value specified above.
@@ -348,7 +348,7 @@
          a designated auto-brightness doze mapping defined in Display Device Config.
          Also used to scale the brightness for the doze mode when auto-brightness is disabled if
          there is an offload session present. -->
-    <fraction name="config_screenAutoBrightnessDozeScaleFactor">60%</fraction>
+    <fraction name="config_screenAutoBrightnessDozeScaleFactor">100%</fraction>
 
     <!-- Minimum color temperature, in Kelvin, supported by Night display. -->
     <integer name="config_nightDisplayColorTemperatureMin">2596</integer>

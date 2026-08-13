@@ -39,7 +39,7 @@
     <highBrightnessMode enabled="true">
         <transitionPoint>0.4998778998778999</transitionPoint>
         <minimumHdrPercentOfScreen>0.1</minimumHdrPercentOfScreen>
-        <minimumLux>20000</minimumLux>
+        <minimumLux>25026</minimumLux>
         <timing>
             <timeWindowSecs>1800</timeWindowSecs>
             <timeMaxSecs>300</timeMaxSecs>
@@ -54,12 +54,12 @@
     </highBrightnessMode>
 
     <evenDimmer enabled="true">
-        <transitionPoint>0.0010866910866910867</transitionPoint>
+        <transitionPoint>0.002197802197802198</transitionPoint>
         <brightnessMapping>
-            <brightnessPoint><brightness>0.0006869171411245199</brightness><backlight>0.0009768009768009768</backlight><nits>1.5</nits></brightnessPoint>
-            <brightnessPoint><brightness>0.0010866910866910867</brightness><backlight>0.0010866910866910867</backlight><nits>2.1330104862470782</nits></brightnessPoint>
-            <brightnessPoint><brightness>0.0014652014652014652</brightness><backlight>0.0014652014652014652</backlight><nits>2.402433645322013</nits></brightnessPoint>
-            <brightnessPoint><brightness>0.0019536019536019536</brightness><backlight>0.0019536019536019536</backlight><nits>2.689425199024708</nits></brightnessPoint>
+            <brightnessPoint><brightness>0.0003980163674883482</brightness><backlight>0.0009768009768009768</backlight><nits>1.0</nits></brightnessPoint>
+            <brightnessPoint><brightness>0.0006939429439807975</brightness><backlight>0.0014652014652014652</backlight><nits>1.6083429254821286</nits></brightnessPoint>
+            <brightnessPoint><brightness>0.0014159691003851327</brightness><backlight>0.0019536019536019536</backlight><nits>2.3752749106921875</nits></brightnessPoint>
+            <brightnessPoint><brightness>0.002197802197802198</brightness><backlight>0.002197802197802198</backlight><nits>2.8462767128494475</nits></brightnessPoint>
             <brightnessPoint><brightness>0.0029304029304029304</brightness><backlight>0.0029304029304029304</backlight><nits>3.316831254323666</nits></brightnessPoint>
             <brightnessPoint><brightness>0.004884004884004884</brightness><backlight>0.004884004884004884</backlight><nits>4.789992625927502</nits></brightnessPoint>
             <brightnessPoint><brightness>0.009768009768009768</brightness><backlight>0.009768009768009768</backlight><nits>9.211771928629664</nits></brightnessPoint>
@@ -82,8 +82,9 @@
             <brightnessPoint><brightness>1.0</brightness><backlight>1.0</backlight><nits>727.41437</nits></brightnessPoint>
         </brightnessMapping>
         <luxToMinimumNitsMap>
-            <point><value>20</value><nits>1.5</nits></point>
-            <point><value>50</value><nits>2.1330104862470782</nits></point>
+            <point><value>0</value><nits>0.0</nits></point>
+            <point><value>20</value><nits>1.0</nits></point>
+            <point><value>50</value><nits>2.10</nits></point>
             <point><value>100</value><nits>2.8462767128494475</nits></point>
         </luxToMinimumNitsMap>
     </evenDimmer>
@@ -95,14 +96,14 @@
             // Percentage increase of lux needed to increase the screen brightness at a lux range
             // above the specified threshold.
             <brightnessThresholdPoints>
-                <brightnessThresholdPoint><threshold>0</threshold><percentage>0.2</percentage></brightnessThresholdPoint>
-                <brightnessThresholdPoint><threshold>16</threshold><percentage>0.5</percentage></brightnessThresholdPoint>
-                <brightnessThresholdPoint><threshold>80</threshold><percentage>1</percentage></brightnessThresholdPoint>
-                <brightnessThresholdPoint><threshold>240</threshold><percentage>3</percentage></brightnessThresholdPoint>
-                <brightnessThresholdPoint><threshold>800</threshold><percentage>10</percentage></brightnessThresholdPoint>
-                <brightnessThresholdPoint><threshold>6400</threshold><percentage>40</percentage></brightnessThresholdPoint>
-                <brightnessThresholdPoint><threshold>16000</threshold><percentage>60</percentage></brightnessThresholdPoint>
-                <brightnessThresholdPoint><threshold>32000</threshold><percentage>100</percentage></brightnessThresholdPoint>
+                <brightnessThresholdPoint><threshold>0</threshold><percentage>20</percentage></brightnessThresholdPoint>
+                <brightnessThresholdPoint><threshold>20</threshold><percentage>10</percentage></brightnessThresholdPoint>
+                <brightnessThresholdPoint><threshold>100</threshold><percentage>20</percentage></brightnessThresholdPoint>
+                <brightnessThresholdPoint><threshold>300</threshold><percentage>30</percentage></brightnessThresholdPoint>
+                <brightnessThresholdPoint><threshold>1000</threshold><percentage>40</percentage></brightnessThresholdPoint>
+                <brightnessThresholdPoint><threshold>8000</threshold><percentage>50</percentage></brightnessThresholdPoint>
+                <brightnessThresholdPoint><threshold>20000</threshold><percentage>60</percentage></brightnessThresholdPoint>
+                <brightnessThresholdPoint><threshold>40000</threshold><percentage>100</percentage></brightnessThresholdPoint>
             </brightnessThresholdPoints>
         </brighteningThresholds>
         <darkeningThresholds>
@@ -111,11 +112,12 @@
             // Percentage increase of lux needed to decrease the screen brightness at a lux range
             // above the specified threshold.
             <brightnessThresholdPoints>
-                <brightnessThresholdPoint><threshold>0</threshold><percentage>85</percentage></brightnessThresholdPoint>
-                <brightnessThresholdPoint><threshold>80</threshold><percentage>77</percentage></brightnessThresholdPoint>
-                <brightnessThresholdPoint><threshold>240</threshold><percentage>70</percentage></brightnessThresholdPoint>
-                <brightnessThresholdPoint><threshold>800</threshold><percentage>60</percentage></brightnessThresholdPoint>
-                <brightnessThresholdPoint><threshold>6400</threshold><percentage>50</percentage></brightnessThresholdPoint>
+                <brightnessThresholdPoint><threshold>0</threshold><percentage>70</percentage></brightnessThresholdPoint>
+                <brightnessThresholdPoint><threshold>20</threshold><percentage>80</percentage></brightnessThresholdPoint>
+                <brightnessThresholdPoint><threshold>100</threshold><percentage>70</percentage></brightnessThresholdPoint>
+                <brightnessThresholdPoint><threshold>300</threshold><percentage>60</percentage></brightnessThresholdPoint>
+                <brightnessThresholdPoint><threshold>1000</threshold><percentage>55</percentage></brightnessThresholdPoint>
+                <brightnessThresholdPoint><threshold>8000</threshold><percentage>50</percentage></brightnessThresholdPoint>
             </brightnessThresholdPoints>
         </darkeningThresholds>
     </ambientBrightnessChangeThresholds>
@@ -147,71 +149,35 @@
         <luxToBrightnessMapping>
             <mode>default</mode>
             <map>
-                <point><first>0</first><second>0.0</second></point>
-                <point><first>1</first><second>0.0021978021978021965</second></point>
-                <point><first>2</first><second>0.004980564296847345</second></point>
-                <point><first>3</first><second>0.00697571391286013</second></point>
-                <point><first>5</first><second>0.010442431558228086</second></point>
-                <point><first>7</first><second>0.013191701604031391</second></point>
-                <point><first>10</first><second>0.017131694104678054</second></point>
-                <point><first>15</first><second>0.02339495708414827</second></point>
-                <point><first>20</first><second>0.030170830860261486</second></point>
-                <point><first>30</first><second>0.041520206918307885</second></point>
-                <point><first>50</first><second>0.04636494717805806</second></point>
-                <point><first>70</first><second>0.049074631382092955</second></point>
-                <point><first>100</first><second>0.052832484703863564</second></point>
-                <point><first>150</first><second>0.057670860551411546</second></point>
-                <point><first>200</first><second>0.06412398612534219</second></point>
-                <point><first>300</first><second>0.08164359977358839</second></point>
-                <point><first>500</first><second>0.10540432589518411</second></point>
-                <point><first>700</first><second>0.1231677894538265</second></point>
-                <point><first>1000</first><second>0.14477598920593632</second></point>
-                <point><first>1500</first><second>0.1717315556960308</second></point>
-                <point><first>2000</first><second>0.19376376191328648</second></point>
-                <point><first>3000</first><second>0.23180570372216303</second></point>
-                <point><first>5000</first><second>0.28540831928645605</second></point>
-                <point><first>7000</first><second>0.32722148404508994</second></point>
-                <point><first>10000</first><second>0.378791354832347</second></point>
-                <point><first>15000</first><second>0.4450337539272581</second></point>
-                <point><first>20000</first><second>0.49987789987789966</second></point>
-                <point><first>30000</first><second>0.631547352158153</second></point>
-                <point><first>50000</first><second>0.9999991187337394</second></point>
-            </map>
-        </luxToBrightnessMapping>
-        <luxToBrightnessMapping>
-            <mode>doze</mode>
-            <setting>dim</setting>
-            <map>
-                <point><first>0</first><second>0.0</second></point>
-                <point><first>1</first><second>0.0007475437861444705</second></point>
-                <point><first>2</first><second>0.0023226201543539416</second></point>
-                <point><first>3</first><second>0.0038499583469403407</second></point>
-                <point><first>5</first><second>0.006181018773458049</second></point>
-                <point><first>7</first><second>0.008149530945807611</second></point>
-                <point><first>10</first><second>0.010701585237824704</second></point>
-                <point><first>15</first><second>0.014209422645572822</second></point>
-                <point><first>20</first><second>0.017935843214026373</second></point>
-                <point><first>30</first><second>0.024080891279174347</second></point>
-                <point><first>50</first><second>0.02677361645729602</second></point>
-                <point><first>70</first><second>0.028282404244382473</second></point>
-                <point><first>100</first><second>0.0304148453236322</second></point>
-                <point><first>150</first><second>0.03316044248528502</second></point>
-                <point><first>200</first><second>0.03703182404608271</second></point>
-                <point><first>226</first><second>0.04</second></point>
-                <point><first>300</first><second>0.04</second></point>
-                <point><first>500</first><second>0.04</second></point>
-                <point><first>700</first><second>0.04</second></point>
-                <point><first>1000</first><second>0.04</second></point>
-                <point><first>1500</first><second>0.04</second></point>
-                <point><first>2000</first><second>0.04</second></point>
-                <point><first>3000</first><second>0.04</second></point>
-                <point><first>5000</first><second>0.04</second></point>
-                <point><first>7000</first><second>0.04</second></point>
-                <point><first>10000</first><second>0.04</second></point>
-                <point><first>15000</first><second>0.04</second></point>
-                <point><first>20000</first><second>0.04</second></point>
-                <point><first>30000</first><second>0.04</second></point>
-                <point><first>50000</first><second>0.04</second></point>
+                <point><first>0</first><second>0.0017783003578683483</second></point>
+                <point><first>1</first><second>0.0018419827309886605</second></point>
+                <point><first>2</first><second>0.003443011693165867</second></point>
+                <point><first>3</first><second>0.005140586100080779</second></point>
+                <point><first>5</first><second>0.007735916699950453</second></point>
+                <point><first>7</first><second>0.010027764035015192</second></point>
+                <point><first>10</first><second>0.012727893729113725</second></point>
+                <point><first>15</first><second>0.016932190960467525</second></point>
+                <point><first>20</first><second>0.020887800016673303</second></point>
+                <point><first>30</first><second>0.028653776053011754</second></point>
+                <point><first>50</first><second>0.04346650703896423</second></point>
+                <point><first>70</first><second>0.0588094537213119</second></point>
+                <point><first>100</first><second>0.07499364105580834</second></point>
+                <point><first>150</first><second>0.08816241582084904</second></point>
+                <point><first>200</first><second>0.09473245001235155</second></point>
+                <point><first>300</first><second>0.10825015842920133</second></point>
+                <point><first>500</first><second>0.13137066535754446</second></point>
+                <point><first>700</first><second>0.14905255384256202</second></point>
+                <point><first>1000</first><second>0.16843000353495036</second></point>
+                <point><first>1500</first><second>0.19360966238604033</second></point>
+                <point><first>2000</first><second>0.2148447973466327</second></point>
+                <point><first>3000</first><second>0.24832560301337475</second></point>
+                <point><first>5000</first><second>0.29327427383227206</second></point>
+                <point><first>7000</first><second>0.3281771489518245</second></point>
+                <point><first>10000</first><second>0.3699280235132152</second></point>
+                <point><first>15000</first><second>0.4191531225098776</second></point>
+                <point><first>20000</first><second>0.4558244129857538</second></point>
+                <point><first>30000</first><second>0.5625950523542039</second></point>
+                <point><first>50000</first><second>0.9747278161803383</second></point>
             </map>
         </luxToBrightnessMapping>
     </autoBrightness>
