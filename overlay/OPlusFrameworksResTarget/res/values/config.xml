@@ -339,6 +339,42 @@
          there is an offload session present. -->
     <fraction name="config_screenAutoBrightnessDozeScaleFactor">60%</fraction>
 
+    <!-- Minimum color temperature, in Kelvin, supported by Night display. -->
+    <integer name="config_nightDisplayColorTemperatureMin">2596</integer>
+
+    <!-- Default color temperature, in Kelvin, to tint the screen when Night display is
+         activated. -->
+    <integer name="config_nightDisplayColorTemperatureDefault">4000</integer>
+
+    <!-- Maximum color temperature, in Kelvin, supported by Night display. -->
+    <integer name="config_nightDisplayColorTemperatureMax">6485</integer>
+
+    <!-- Identical to AOSP default, where 6500 corresponds to NOP -->
+    <string-array name="config_nightDisplayColorTemperatureCoefficientsNative">
+        <!-- R a-coefficient --> <item>0.0</item>
+        <!-- R b-coefficient --> <item>0.0</item>
+        <!-- R y-intercept --> <item>1.0</item>
+        <!-- G a-coefficient --> <item>-0.00000000962353339</item>
+        <!-- G b-coefficient --> <item>0.000153045476</item>
+        <!-- G y-intercept --> <item>0.390782778</item>
+        <!-- B a-coefficient --> <item>-0.0000000189359041</item>
+        <!-- B b-coefficient --> <item>0.000302412211</item>
+        <!-- B y-intercept --> <item>-0.198650895</item>
+    </string-array>
+
+    <!-- Identical to AOSP default, where 6500 corresponds to NOP -->
+    <string-array name="config_nightDisplayColorTemperatureCoefficients">
+        <!-- R a-coefficient --> <item>0.0</item>
+        <!-- R b-coefficient --> <item>0.0</item>
+        <!-- R y-intercept --> <item>1.0</item>
+        <!-- G a-coefficient --> <item>-0.00000000962353339</item>
+        <!-- G b-coefficient --> <item>0.000153045476</item>
+        <!-- G y-intercept --> <item>0.390782778</item>
+        <!-- B a-coefficient --> <item>-0.0000000189359041</item>
+        <!-- B b-coefficient --> <item>0.000302412211</item>
+        <!-- B y-intercept --> <item>-0.198650895</item>
+    </string-array>
+
     <!-- The bounding path of the cutout region of the main built-in display.
          Must either be empty if there is no cutout region, or a string that is parsable by
          {@link android.util.PathParser}.
