@@ -311,6 +311,17 @@
     <!-- Light sensor event rate in milliseconds for automatic brightness control. -->
     <integer name="config_autoBrightnessLightSensorRate">200</integer>
 
+    <!-- Framework-level scaling factor multiplied to ambient light (TYPE_LIGHT) sensor readings.
+         This might be needed to correct devices whose ambient light sensor HAL is proprietary
+         and reports readings of the wrong magnitude.
+         
+         Prefer HAL, kernel or device tree corrections if possible. Use this only as a last
+         resort.
+         
+         This is not AOSP functionality, but enabled by a private framework patch.
+         See commit ba0dde3733c09a2d0876a337815c104ef972c2bb in frameworks/base. -->
+    <item name="config_ambientLightSensorScaleFactor" format="float" type="dimen">0.05</item>
+
     <!-- Control whether the always on display mode is available. This should only be enabled on
          devices where the display has been tuned to be power efficient in DOZE and/or DOZE_SUSPEND
          states. -->
