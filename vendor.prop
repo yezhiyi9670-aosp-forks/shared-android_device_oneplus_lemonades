@@ -5,5 +5,10 @@ bluetooth.device.default_name=OnePlus 9R
 ro.crypto.dm_default_key.options_format.version=2
 ro.crypto.volume.metadata.method=dm-default-key
 
+# Display
+# use_linear_color_matrix: Not an AOSP feature.
+#   See commit e828f30f2ed45db4970aee400bea31f1bb20b532 in frameworks/base.
+ro.sf.use_linear_color_matrix=0
+
 # USB
 vendor.usb.product_string=OnePlus 9R
