@@ -183,10 +183,10 @@
         </luxToBrightnessMapping>
     </autoBrightness>
 
-    <screenBrightnessRampFastDecrease>0.70</screenBrightnessRampFastDecrease>
-    <screenBrightnessRampFastIncrease>0.70</screenBrightnessRampFastIncrease>
-    <screenBrightnessRampSlowDecrease>0.02</screenBrightnessRampSlowDecrease>
-    <screenBrightnessRampSlowIncrease>0.07</screenBrightnessRampSlowIncrease>
+    <screenBrightnessRampFastDecrease>1.00</screenBrightnessRampFastDecrease>
+    <screenBrightnessRampFastIncrease>1.00</screenBrightnessRampFastIncrease>
+    <screenBrightnessRampSlowDecrease>0.03</screenBrightnessRampSlowDecrease>
+    <screenBrightnessRampSlowIncrease>0.10</screenBrightnessRampSlowIncrease>
 
     <screenBrightnessRampIncreaseMaxMillis>2000</screenBrightnessRampIncreaseMaxMillis>
     <screenBrightnessRampDecreaseMaxMillis>5000</screenBrightnessRampDecreaseMaxMillis>

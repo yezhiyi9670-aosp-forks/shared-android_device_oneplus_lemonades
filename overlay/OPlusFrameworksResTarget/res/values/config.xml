@@ -305,10 +305,10 @@
     <integer name="config_autoBrightnessAmbientLightHorizon">2000</integer>
 
     <!-- Fast brightness animation ramp rate in brightness units per second-->
-    <integer translatable="false" name="config_brightness_ramp_rate_fast">180</integer>
+    <integer translatable="false" name="config_brightness_ramp_rate_fast">255</integer>
 
     <!-- Slow brightness animation ramp rate in brightness units per second-->
-    <integer translatable="false" name="config_brightness_ramp_rate_slow">12</integer>
+    <integer translatable="false" name="config_brightness_ramp_rate_slow">18</integer>
 
     <!-- Light sensor event rate in milliseconds for automatic brightness control. -->
     <integer name="config_autoBrightnessLightSensorRate">200</integer>
