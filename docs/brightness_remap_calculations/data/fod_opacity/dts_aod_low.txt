@@ -1,0 +1,5 @@
+	oplus,dsi-aod-low-brightness = <0 0xff>,
+				       <2 141>,
+				       <4 108>,
+				       <13 70>,
+				       <21 54>;
