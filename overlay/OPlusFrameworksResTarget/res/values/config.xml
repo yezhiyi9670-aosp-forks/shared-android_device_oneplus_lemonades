@@ -133,6 +133,7 @@
         <item>20000</item>
         <item>30000</item>
         <item>50000</item>
+        <item>70000</item>
     </integer-array>
 
     <!-- Array of desired screen brightness in nits corresponding to the lux values
@@ -150,34 +151,35 @@
          overridden in platform specific overlays -->
     <array name="config_autoBrightnessDisplayValuesNits">
         <item>0.992833418392721</item>
-        <item>1.1369775879228172</item>
-        <item>3.564464388930779</item>
-        <item>5.121759331295525</item>
-        <item>7.377022920346898</item>
-        <item>9.642590731976135</item>
-        <item>12.378105242113254</item>
-        <item>16.775732621571734</item>
-        <item>20.821864603878254</item>
-        <item>28.2853474536976</item>
-        <item>41.70890145403054</item>
-        <item>55.34850046680218</item>
-        <item>70.65176526752144</item>
-        <item>83.11523532403413</item>
-        <item>89.31397540086367</item>
-        <item>102.04493801701432</item>
-        <item>123.56594040948569</item>
-        <item>139.7372674611782</item>
-        <item>157.4593041468438</item>
-        <item>180.4808141006024</item>
-        <item>199.88435632434985</item>
-        <item>230.50106594818232</item>
-        <item>275.19820098420064</item>
-        <item>309.9057572687803</item>
-        <item>351.42299113007124</item>
-        <item>401.75682766361</item>
-        <item>439.3474826166642</item>
-        <item>529.5567799967359</item>
-        <item>726.1488521124969</item>
+        <item>1.1369775879228192</item>
+        <item>3.5753377494520735</item>
+        <item>5.138108676643011</item>
+        <item>7.4122077599655505</item>
+        <item>9.695240136012497</item>
+        <item>12.463668539397656</item>
+        <item>16.919451900094813</item>
+        <item>21.004960815266134</item>
+        <item>28.57211952768802</item>
+        <item>42.815715382485436</item>
+        <item>55.3303048126191</item>
+        <item>68.63600975462134</item>
+        <item>79.39090395365449</item>
+        <item>89.0169350924545</item>
+        <item>105.42394072659738</item>
+        <item>133.74544954113912</item>
+        <item>154.0846848728165</item>
+        <item>178.6835817010322</item>
+        <item>213.3668132655053</item>
+        <item>241.37387935975724</item>
+        <item>287.3845565243217</item>
+        <item>359.10201145575815</item>
+        <item>415.58229216489707</item>
+        <item>484.4572346002585</item>
+        <item>484.4572346002585</item>
+        <item>484.4572346002585</item>
+        <item>484.50540871503614</item>
+        <item>618.8224655532264</item>
+        <item>727.4143699999996</item>
     </array>
 
     <!-- Array of lux values to define the minimum brightness curve, which guarantees that any
