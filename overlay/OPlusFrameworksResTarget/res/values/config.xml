@@ -22,8 +22,8 @@
         <item>300</item>
         <item>400</item>
         <item>500</item>
-        <item>600</item>
-        <item>1000</item>
+        <item>250</item>
+        <item>100</item>
     </integer-array>
 
     <!-- Array of hysteresis constraint values for darkening, represented as tenths of a
@@ -151,32 +151,32 @@
          overridden in platform specific overlays -->
     <array name="config_autoBrightnessDisplayValuesNits">
         <item>0.992833418392721</item>
-        <item>1.8649639754766958</item>
-        <item>4.208292585282067</item>
-        <item>5.619411329139992</item>
-        <item>7.915116311510173</item>
-        <item>10.04714072397261</item>
-        <item>12.655748617160468</item>
-        <item>16.73211156716343</item>
-        <item>20.420085016513603</item>
-        <item>27.051257528390654</item>
-        <item>38.41542109560831</item>
-        <item>49.28262404555188</item>
-        <item>62.39317113212714</item>
-        <item>77.8229542079876</item>
-        <item>87.93359270675036</item>
-        <item>103.2180741240609</item>
-        <item>127.15087415268994</item>
-        <item>145.43981382364257</item>
-        <item>166.44827480036153</item>
-        <item>194.9033772682723</item>
-        <item>218.77789146654652</item>
-        <item>256.24497997577384</item>
-        <item>313.6420828220939</item>
-        <item>358.63732124605997</item>
-        <item>413.15685342441463</item>
-        <item>484.4572346002585</item>
-        <item>484.4572346002585</item>
+        <item>1.688781480168114</item>
+        <item>4.136151831860018</item>
+        <item>5.61456200141952</item>
+        <item>8.062840345530462</item>
+        <item>10.313123491673487</item>
+        <item>13.171085642818088</item>
+        <item>17.702964980084552</item>
+        <item>21.723736434001356</item>
+        <item>29.20706247465452</item>
+        <item>42.44675681282548</item>
+        <item>54.706365179684354</item>
+        <item>70.70533772175946</item>
+        <item>90.64300083050458</item>
+        <item>104.12750675558189</item>
+        <item>124.45232155754309</item>
+        <item>148.32713942827698</item>
+        <item>167.09224692017207</item>
+        <item>190.1461983709175</item>
+        <item>221.46098703992166</item>
+        <item>245.85445505208682</item>
+        <item>285.39712376035624</item>
+        <item>345.18805227479464</item>
+        <item>391.498324090024</item>
+        <item>446.30538677771324</item>
+        <item>484.45723460025846</item>
+        <item>484.45723460025846</item>
         <item>484.50540871503614</item>
         <item>618.8224655532264</item>
         <item>727.4143699999996</item>
