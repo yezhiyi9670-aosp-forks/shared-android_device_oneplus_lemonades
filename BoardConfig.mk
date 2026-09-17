@@ -31,3 +31,11 @@ TARGET_RECOVERY_UI_MARGIN_HEIGHT := 103
 
 # Include the proprietary files BoardConfig.
 include vendor/oneplus/lemonades/BoardConfigVendor.mk
+
+# Include Pixel clocks even without GMS included
+# See: vendor/pixel/clocks/product/board.mk
+include vendor/pixel/clocks/common/BoardConfigVendor.mk
+
+# Include Pixel sounds even without GMS included
+# See: vendor/pixel/sounds/product/board.mk
+# include vendor/pixel/sounds/common/BoardConfigVendor.mk

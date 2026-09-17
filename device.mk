@@ -62,3 +62,19 @@ $(call inherit-product, device/oneplus/sm8250-common/common.mk)
 
 # Inherit from the proprietary files makefile.
 $(call inherit-product, vendor/oneplus/lemonades/lemonades-vendor.mk)
+
+# Include Pixel clocks even without GMS included
+# See: vendor/pixel/clocks/product/clocks.mk
+$(call inherit-product, vendor/pixel/clocks/common/common-vendor.mk)
+PRODUCT_PACKAGES += SystemUIResPixelClocks
+
+# Include Pixel sounds even without GMS included
+# See: vendor/pixel/sounds/product/sounds.mk
+# $(call inherit-product, vendor/pixel/sounds/common/common-vendor.mk)
+# # PRODUCT_PRODUCT_PROPERTIES += \
+# #     ro.config.ringtone=Your_new_adventure.ogg \
+# #     ro.config.notification_sound=Eureka.ogg \
+# #     ro.config.alarm_alert=Fresh_start.ogg
+# PRODUCT_PACKAGES += \
+#     FrameworkPixelSounds \
+#     SettingsPixelSounds
