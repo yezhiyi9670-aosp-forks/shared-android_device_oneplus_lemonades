@@ -47,8 +47,8 @@ public class BootReceiver extends BroadcastReceiver {
             putSecureSettingsDefaultValue(context, Settings.Secure.SHOW_MEDIA_SQUIGGLE_ANIMATION, "0");
 
             // FIXME: Ultra Dim default strength inconsistency
-            // (zero on UI but obviously not zero actually)
-            putSecureSettingsDefaultValue(context, Settings.Secure.REDUCE_BRIGHT_COLORS_LEVEL, "0");
+            // (50 means the middle of the slider, not 50% brightness)
+            putSecureSettingsDefaultValue(context, Settings.Secure.REDUCE_BRIGHT_COLORS_LEVEL, "50");
 
             // HDR strength
             // (set a sane default here since full strength will cause switching flickering due to quirks)
